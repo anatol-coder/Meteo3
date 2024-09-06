@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Meteo3 App</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="weather-app-seach-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="weather-app-search-input"
+            id="search-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="weather-app-search-button"
+          />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-all-data">
+          <div class="weather-app-details">
+            <h1 id="city"></h1>
+            <p>
+              <span class="time-and-conditions">
+                <span id="time"></span> <span id="description"></span>
+                <br />
+                Humidity:<strong id="humidity"></strong>Wind:<strong
+                  id="wind-speed"
+                ></strong>
+              </span>
+            </p>
+          </div>
+          <div class="weather-app-temperature">
+            <div id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                class="weather-app-temperature-icon"
+              />
+            </div>
+          </div>
+          <div class="weather-app-temperature-value" id="temperature"></div>
+          <div class="weather-app-temperature-unit">℃</div>
+        </div>
+        <div class="weather-app-forecast">
+          <div class="weather-app-forecast-day">
+            <div class="weather-app-forecast-date">Tue</div>
+            <div class="weather-app-forecast-icon">🌤️</div>
+            <div class="weather-app-forecast-temperatures">
+              <div class="weather-app-forecast-temperature">
+                <strong>22°</strong>
+              </div>
+              <div class="weather-app-forecast-temperature">16°</div>
+            </div>
+          </div>
+          <div class="weather-app-forecast-day">
+            <div class="weather-app-forecast-date">Tue</div>
+            <div class="weather-app-forecast-icon">🌤️</div>
+            <div class="weather-app-forecast-temperatures">
+              <div class="weather-app-forecast-temperature">
+                <strong>22°</strong>
+              </div>
+              <div class="weather-app-forecast-temperature">16°</div>
+            </div>
+          </div>
+          <div class="weather-app-forecast-day">
+            <div class="weather-app-forecast-date">Tue</div>
+            <div class="weather-app-forecast-icon">🌤️</div>
+            <div class="weather-app-forecast-temperatures">
+              <div class="weather-app-forecast-temperature">
+                <strong>22°</strong>
+              </div>
+              <div class="weather-app-forecast-temperature">16°</div>
+            </div>
+          </div>
+          <div class="weather-app-forecast-day">
+            <div class="weather-app-forecast-date">Tue</div>
+            <div class="weather-app-forecast-icon">🌤️</div>
+            <div class="weather-app-forecast-temperatures">
+              <div class="weather-app-forecast-temperature">
+                <strong>22°</strong>
+              </div>
+              <div class="weather-app-forecast-temperature">16°</div>
+            </div>
+          </div>
+          <div class="weather-app-forecast-day">
+            <div class="weather-app-forecast-date">Tue</div>
+            <div class="weather-app-forecast-icon">🌤️</div>
+            <div class="weather-app-forecast-temperatures">
+              <div class="weather-app-forecast-temperature">
+                <strong>22°</strong>
+              </div>
+              <div class="weather-app-forecast-temperature">16°</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        The project was coded by
+        <a href="https://github.com/anatol-coder" target="_blank">
+          Anna Wysota
+        </a>
+        , is
+        <a href="https://github.com/anatol-coder/Meteo2" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and
+        <a href="https://meteo2-anatols-app.netlify.app" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

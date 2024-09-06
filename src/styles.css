@@ -1,0 +1,131 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Open Sans", sans-serif;
+
+  .open-sans-<uniquifier > {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+}
+.weather-app {
+  background-color: white;
+  margin: 30px auto;
+  width: 600px;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+.weather-app-search-input {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 20px;
+  width: 75%;
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+.weather-app-search-button {
+  background-color: #885df1;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 30px;
+  margin-left: 5px;
+  font-size: 16px;
+  color: white;
+}
+main {
+  padding: 30px 0;
+}
+.heading {
+  position: relative;
+  top: -10px;
+  left: 20px;
+}
+h1 {
+  line-height: 48px;
+  margin: 0;
+  font-size: 38px;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.weather-app-all-data {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-app-details strong {
+  color: #ef5e99;
+}
+.time-and-conditions {
+  display: inline;
+  font-size: 14px;
+}
+.weather-app-temperature {
+  margin-top: 35px;
+  display: flex;
+  justify-content: end;
+  margin-left: 178px;
+  margin-right: 10px;
+}
+.weather-app-temperature-value {
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 78px;
+  margin-top: 35px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.weather-app-temperature-icon {
+  width: 77x;
+  height: 77px;
+  margin-top: -30px;
+  margin-bottom: 35px;
+  margin-right: -15px;
+}
+.weather-app-temperature-unit {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-right: 49px;
+}
+.weather-app-forecast {
+  margin-top: 30px;
+  display: flex;
+}
+.weather-app-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.weather-app-forecast-icon {
+  text-align: center;
+  font-size: 38px;
+}
+.weather-app-forecast-temperatures {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #ef5e99;
+}
+
+.weather-app-forecast-temperature {
+  padding: 10px;
+}
+footer {
+  text-align: center;
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+a {
+  color: #885df1;
+  font-weight: 100;
+}
