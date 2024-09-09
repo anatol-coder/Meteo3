@@ -53,16 +53,10 @@ function handleSearchSubmit(event) {
   searchCity(searchInputElement.value);
 }
 
-function getForecast(city) {
-  let apiKey = "5b407712f11dct93a10f4f1dc8e2394o";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
-  console.log(apiUrl);
-  axios.get(apiUrl).then(displayForecast);
-}
-
-function displayForecast(response) {
+function displayForecast() {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
+
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
@@ -75,15 +69,16 @@ function displayForecast(response) {
       </div>
       <div class="weather-app-forecast-temperature">16°</div>
     </div>
-  </div>
+    </div>
 `;
   });
+
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
 searchCity("Tbilisi");
-getForecast("Tbilisi");
 displayForecast();
