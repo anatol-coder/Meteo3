@@ -105,8 +105,9 @@ p {
   margin-top: 10px;
 }
 .weather-app-forecast-icon {
-  text-align: center;
-  font-size: 38px;
+  width: 55px;
+  display: block;
+  margin: 0 auto;
 }
 .weather-app-forecast-temperatures {
   display: flex;
